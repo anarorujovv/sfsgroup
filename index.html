@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171815" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="description" content="S.F&S Group-un istehsal sahəsi, materialları və məkan həlləri haqqında vizual təqdimat." />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preload" href="/media/tour-poster-desktop.jpg" as="image" media="(min-width: 769px)" />
+    <link rel="preload" href="/media/tour-poster-mobile.jpg" as="image" media="(max-width: 768px)" />
+    <title>S.F&S Group — İstehsala yaxından baxış</title>
+  </head>
+  <body>
+    <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <symbol id="icon-arrow-up-right" viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11" /></symbol>
+      <symbol id="icon-arrow-down-right" viewBox="0 0 24 24"><path d="m5 5 14 14M8 19h11V8" /></symbol>
+      <symbol id="icon-arrow-up" viewBox="0 0 24 24"><path d="M12 20V4m-7 7 7-7 7 7" /></symbol>
+      <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16" /></symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19" /></symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6" /></symbol>
+    </svg>
+    <a class="skip-link" href="#perspective">Filmi keç</a>
+
+    <header class="site-header" id="site-header">
+      <a class="wordmark" href="#top" aria-label="Başlanğıca qayıt">
+        <span class="wordmark-mark">S<span class="wordmark-small">.</span>F<span class="wordmark-amp">&amp;</span>S</span>
+        <span class="wordmark-rule"></span>
+        <span class="wordmark-group">GROUP</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Əsas menyu">
+        <a href="#journey">Film</a>
+        <a href="#perspective">Baxış</a>
+        <a href="#gallery">Qalereya</a>
+        <a href="#contact" class="nav-contact">Əlaqə <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right" /></svg></a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Menyunu aç">
+        <svg class="icon icon-menu" aria-hidden="true"><use href="#icon-menu" /></svg><svg class="icon icon-close" aria-hidden="true"><use href="#icon-close" /></svg>
+      </button>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobil menyu" hidden>
+      <a href="#journey">Film</a>
+      <a href="#perspective">Baxış</a>
+      <a href="#gallery">Qalereya</a>
+      <a href="#contact">Əlaqə</a>
+    </nav>
+
+    <main id="top">
+      <section class="tour-track" id="journey" aria-label="Sürüşdürmə ilə idarə olunan S.F&S Group filmi">
+        <div class="tour-stage" id="tour-stage">
+          <div class="film-wrap">
+            <video id="tour-video" class="tour-video" preload="auto" playsinline muted aria-label="S.F&S Group filminin eksteryer, istehsal sahəsi, dolab və rəf konstruksiyaları, anbar kadrları"></video>
+            <div class="film-shade"></div>
+          </div>
+
+          <div class="film-end-panel" id="film-end-panel" aria-hidden="true">
+            <p>İstehsala yaxından baxış</p>
+            <a href="#gallery">Qalereyaya bax <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right" /></svg></a>
+            <a href="#contact">Bizimlə əlaqə <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right" /></svg></a>
+          </div>
+
+          <div class="hero-copy chapter active" data-chapter="0">
+            <div class="eyebrow"><span class="eyebrow-line"></span> S.F&S Group filmi <span class="eyebrow-index">01 / 04</span></div>
+            <h1>İstehsala<br /><em>yaxından baxış.</em></h1>
+            <div class="hero-bottom">
+              <p>Eksteryerdən istehsal sahəsinə, konstruksiyalardan anbara doğru vizual səyahət.</p>
+              <button class="round-link" id="explore-button" type="button" aria-label="Filmi kəşf et"><span>Filmi<br />kəşf et</span><svg class="icon round-arrow" aria-hidden="true"><use href="#icon-arrow-down-right" /></svg></button>
+            </div>
+          </div>
+
+          <div class="scene-copy chapter" data-chapter="1" aria-hidden="true">
+            <div class="eyebrow"><span class="eyebrow-line"></span> 02 / 04 — Hazırlanma</div>
+            <h2>Hər xətt<br /><em>düşüncə ilə başlayır.</em></h2>
+            <p>Avadanlıqlara, materiallara və istehsal məkanına yaxından baxış.</p>
+          </div>
+
+          <div class="scene-copy chapter" data-chapter="2" aria-hidden="true">
+            <div class="eyebrow"><span class="eyebrow-line"></span> 03 / 04 — Detallar</div>
+            <h2>Material.<br />İşçilik. <em>Son toxunuş.</em></h2>
+            <p>Dolab və rəf konstruksiyalarında görünən səliqəli xətlər.</p>
+          </div>
+
+          <div class="scene-copy chapter" data-chapter="3" aria-hidden="true">
+            <div class="eyebrow"><span class="eyebrow-line"></span> 04 / 04 — Sistem</div>
+            <h2>Hər mərhələ<br /><em>öz yerində.</em></h2>
+            <p>İstehsal sahəsindən anbara və yekun görünüşə.</p>
+          </div>
+
+          <div class="tour-footer">
+            <span class="scroll-cue"><span class="scroll-cue-line"></span> Aşağı sürüşdürün</span>
+            <div class="film-progress" aria-label="Filmin irəliləyişi"><span id="film-progress-bar"></span></div>
+            <span class="timecode"><span id="current-time">00:00</span> / <span id="total-time">00:15</span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="handoff" id="perspective" aria-labelledby="perspective-title">
+        <div class="handoff-topline"><span>S.F&S Group</span><span>Filmdən sonra / 01</span></div>
+        <div class="handoff-grid">
+          <div class="handoff-title">
+            <p class="section-kicker">Bir baxış bucağı</p>
+            <h2 id="perspective-title">Hər detalın arxasında <em>bir proses var.</em></h2>
+          </div>
+          <div class="handoff-aside">
+            <div class="vertical-line"></div>
+            <p>Film binanın eksteryerindən istehsal sahəsinə keçir. Dolab və rəf konstruksiyaları, avadanlıqlar və anbar həmin hekayənin davamıdır.</p>
+            <a class="text-link light" href="#gallery">Vizual hekayəyə bax <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right" /></svg></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="signature" id="signature" aria-labelledby="signature-title">
+        <div class="signature-sticky">
+          <div class="signature-image signature-image-left"><img src="/media/film-site.jpg" alt="Yeni filmdə görünən istehsal binasının eksteryeri" loading="eager" /></div>
+          <div class="signature-image signature-image-right"><img src="/media/film-process.jpg" alt="İstehsal sahəsində dolab və rəf konstruksiyaları" loading="eager" /></div>
+          <div class="signature-center">
+            <p class="section-kicker">Diqqət sənəti</p>
+            <h2 id="signature-title"><span>FORMA</span><span class="serif-line">oyadır</span><span>HİSS</span></h2>
+            <p class="signature-note">Memarlıq, istehsal məkanı və konstruksiyalar arasında vizual əlaqə.</p>
+          </div>
+          <div class="signature-number">02 / Yaxından baxış</div>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-head">
+          <div><p class="section-kicker">Seçilmiş kadrlar / 03</p><h2 id="gallery-title">Detallar<span class="period">.</span></h2></div>
+          <p>Yeni filmdən seçilən eksteryer, istehsal sahəsi, konstruksiya və anbar kadrları.</p>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item gallery-item-large" type="button" data-image="/media/film-site.jpg" data-caption="01 / Eksteryer" aria-label="İstehsal binasının eksteryer kadrını aç">
+            <img src="/media/film-site.jpg" alt="Axşam işığında istehsal binasının şüşəli eksteryeri" loading="lazy" /><span class="gallery-caption"><span>01 / Eksteryer</span><span>Kadra bax <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right" /></svg></span></span>
+          </button>
+          <button class="gallery-item gallery-item-small" type="button" data-image="/media/film-workshop.jpg" data-caption="02 / İstehsal sahəsi" aria-label="İstehsal sahəsinin kadrını aç">
+            <img src="/media/film-workshop.jpg" alt="Avadanlıqlar və materiallar olan istehsal sahəsi" loading="lazy" /><span class="gallery-caption"><span>02 / İstehsal</span><span>Kadra bax <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right" /></svg></span></span>
+          </button>
+          <button class="gallery-item gallery-item-small" type="button" data-image="/media/film-cabinetry.jpg" data-caption="03 / Konstruksiyalar" aria-label="Dolab və rəf konstruksiyalarının kadrını aç">
+            <img src="/media/film-cabinetry.jpg" alt="İstehsal sahəsində dolab və rəf konstruksiyaları" loading="lazy" /><span class="gallery-caption"><span>03 / Konstruksiyalar</span><span>Kadra bax <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right" /></svg></span></span>
+          </button>
+          <button class="gallery-item gallery-item-large" type="button" data-image="/media/film-warehouse.jpg" data-caption="04 / Anbar" aria-label="Anbar kadrını aç">
+            <img src="/media/film-warehouse.jpg" alt="Material və qablaşdırılmış hissələr olan anbar rəfləri" loading="lazy" /><span class="gallery-caption"><span>04 / Anbar</span><span>Kadra bax <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right" /></svg></span></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="statement" aria-label="İstehsal haqqında fikir">
+        <span>01 / İlk baxış</span><span class="statement-line"></span><span>04 / İşin ritmi</span>
+        <p>Görünən hər detalın arxasında qurulmuş bir proses var.</p>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-visual"><img src="/media/film-contact.jpg" alt="Filmin sonuna yaxın görünən istehsal binasının girişi" loading="lazy" /></div>
+        <div class="contact-content">
+          <p class="section-kicker">Özəl söhbət / 04</p>
+          <h2 id="contact-title">Bir söhbətlə<br /><em>başlayaq.</em></h2>
+          <p class="contact-intro">S.F&S Group barədə məlumat almaq istəyirsiniz? Müraciətinizi hazırlayın və əlaqə məlumatları təsdiqlənəndə nümayəndəyə göndərin.</p>
+          <form id="enquiry-form" class="enquiry-form">
+            <label for="enquiry-name">Adınız</label><input id="enquiry-name" name="name" autocomplete="name" required placeholder="Ad" />
+            <label for="enquiry-email">E-poçt ünvanı</label><input id="enquiry-email" name="email" type="email" autocomplete="email" required placeholder="E-poçt" />
+            <label for="enquiry-message">Müraciətiniz</label><textarea id="enquiry-message" name="message" rows="3" placeholder="S.F&S Group barədə ətraflı məlumat almaq istərdim."></textarea>
+            <button class="submit-button" type="submit">Müraciəti hazırla <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right" /></svg></button>
+          </form>
+          <div class="enquiry-result" id="enquiry-result" hidden>
+            <p id="enquiry-status">Müraciətiniz hazırdır.</p>
+            <button type="button" id="copy-enquiry">Müraciəti kopyala <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up-right" /></svg></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="footer-brand" href="#top">S.F&amp;S <span>GROUP</span></a><span>İstehsala baxış</span><a href="#top">Yuxarı qayıt <svg class="icon" aria-hidden="true"><use href="#icon-arrow-up" /></svg></a></footer>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Qalereya şəkli"><button class="lightbox-close" id="lightbox-close" type="button" aria-label="Şəkli bağla"><svg class="icon" aria-hidden="true"><use href="#icon-close" /></svg></button><img id="lightbox-image" alt="" /><p id="lightbox-caption"></p></dialog>
+    <script src="/src/main.js" defer></script>
+  </body>
+</html>

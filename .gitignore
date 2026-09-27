@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+site-publish/
+scripts/
+media/*
+!media/film-*.jpg
+!media/tour-*.mp4
+!media/tour-poster-*.jpg
